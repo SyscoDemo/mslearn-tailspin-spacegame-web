@@ -20,9 +20,8 @@ variables:
 
 steps:
 
-- task: CmdLine@2
-  inputs:
-    script: 'echo $ENV'
+
+- script: printenv
 
 - script: echo $(Build.BuildNumber)
 
