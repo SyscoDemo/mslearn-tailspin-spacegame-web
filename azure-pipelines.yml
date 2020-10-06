@@ -10,7 +10,10 @@ pool:
 
 # name: $(TeamProject) : releaseName
 # name: $(Build.DefinitionName) : SyscoDemo.mslearn-tailspin-spacegame-web
-name: $(SourceBranchName)
+# name: $(SourceBranchName) : releaseName
+
+name: $(Date:yyyyMMdd)$(Rev:.r)
+
 
 variables:
   buildConfiguration: 'Release'
