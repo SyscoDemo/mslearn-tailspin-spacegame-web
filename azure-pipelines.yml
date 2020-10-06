@@ -20,6 +20,10 @@ variables:
 
 steps:
 
+- task: CmdLine@2
+  inputs:
+    script: 'echo $ENV'
+
 - script: echo $(Build.BuildNumber)
 
 - task: UseDotNet@2
