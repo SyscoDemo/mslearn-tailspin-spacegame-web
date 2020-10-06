@@ -7,7 +7,10 @@ pool:
   - npm
 
 # name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
-name: $(Build.DefinitionName)
+
+# name: $(TeamProject) : releaseName
+# name: $(Build.DefinitionName) : SyscoDemo.mslearn-tailspin-spacegame-web
+name: $(SourceBranchName)
 
 variables:
   buildConfiguration: 'Release'
