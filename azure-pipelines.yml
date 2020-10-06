@@ -7,7 +7,7 @@ pool:
   - npm
 
 # name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
-name: $(TeamProject)
+name: $(Build.DefinitionName)
 
 variables:
   buildConfiguration: 'Release'
