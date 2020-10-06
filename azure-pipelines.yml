@@ -13,7 +13,7 @@ pool:
 # name: $(SourceBranchName) : releaseName
 
 # name: $(Date:yyyyMMdd)$(Rev:.r)
-name: $(REQUESTEDFOR)
+name: $(SourceBranchName)
 
 variables:
   buildConfiguration: 'Release'
